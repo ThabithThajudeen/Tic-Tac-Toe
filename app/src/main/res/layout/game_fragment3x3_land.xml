@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment3x3">
+
+    <ImageView
+        android:id="@+id/gridView"
+        android:layout_width="635dp"
+        android:layout_height="614dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grid3x3removedbg" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="386dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/gridView"
+        app:layout_constraintEnd_toEndOf="@id/gridView"
+        app:layout_constraintStart_toStartOf="@id/gridView"
+        app:layout_constraintTop_toTopOf="@+id/gridView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tile0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="46dp" />
+
+            <ImageView
+                android:id="@+id/tile1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="140dp" />
+
+            <ImageView
+                android:id="@+id/tile2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="242dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tile3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="46dp" />
+
+            <ImageView
+                android:id="@+id/tile4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="140dp" />
+
+            <ImageView
+                android:id="@+id/tile5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="242dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:divider="@android:drawable/alert_dark_frame"
+            android:dividerPadding="0dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tile6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="46dp" />
+
+            <ImageView
+                android:id="@+id/tile7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="140dp" />
+
+            <ImageView
+                android:id="@+id/tile8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/blankgrid"
+                tools:layout_editor_absoluteX="242dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIn"
+        style="@style/AppButtonStyle"
+        android:layout_width="112dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="6dp"
+        android:text="settings"
+        app:layout_constraintBottom_toTopOf="@+id/player1Name"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/undoButton" />
+
+    <TextView
+        android:id="@+id/player1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridView"
+        android:layout_alignParentStart="true"
+        android:hint="Player 1 Name"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/undoButton"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <TextView
+        android:id="@+id/player2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:hint="Player 2 Name"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gridView"
+        app:layout_constraintTop_toBottomOf="@+id/timerText"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="116dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gridView"
+        app:layout_constraintTop_toBottomOf="@+id/resetButton" />
+
+    <TextView
+        android:id="@+id/currentPlayerTurn"
+        android:layout_width="103dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/player1Name"
+        android:layout_centerHorizontal="true"
+        android:hint="Your Turn"
+        android:padding="0dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/gridView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="Undo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gridView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

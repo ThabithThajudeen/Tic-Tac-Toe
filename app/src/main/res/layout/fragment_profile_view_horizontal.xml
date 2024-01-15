@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_view_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ProfileView">
+
+    <!-- Profile 1 -->
+    <ImageView
+        android:id="@+id/profile_image_1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/profile_name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/profile_image_1"
+        android:layout_alignTop="@+id/profile_image_1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/edit_Profile_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_toEndOf="@+id/profile_image_1"
+        android:layout_below="@+id/profile_name_1"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/set_active_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:layout_toEndOf="@+id/edit_Profile_1"
+        android:layout_below="@+id/profile_name_1"
+        android:layout_marginTop="8dp" />
+
+    <!-- Profile 2 -->
+    <ImageView
+        android:id="@+id/profile_image_2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/profile_image_1"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/profile_name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/profile_image_2"
+        android:layout_alignTop="@+id/profile_image_2"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/edit_Profile_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_toEndOf="@+id/profile_image_2"
+        android:layout_below="@+id/profile_name_2"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/set_active_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:layout_toEndOf="@+id/edit_Profile_2"
+        android:layout_below="@+id/profile_name_2"
+        android:layout_marginTop="8dp" />
+
+    <!-- Profile 3 -->
+    <ImageView
+        android:id="@+id/profile_image_3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/profile_image_2"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/profile_name_3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/profile_image_3"
+        android:layout_alignTop="@+id/profile_image_3"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/edit_Profile_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_toEndOf="@+id/profile_image_3"
+        android:layout_below="@+id/profile_name_3"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/set_active_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:layout_toEndOf="@+id/edit_Profile_3"
+        android:layout_below="@+id/profile_name_3"
+        android:layout_marginTop="8dp" />
+
+    <!-- Profile 4 -->
+    <ImageView
+        android:id="@+id/profile_image_4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/profile_image_3"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/profile_name_4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/profile_image_4"
+        android:layout_alignTop="@+id/profile_image_4"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/edit_Profile_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_toEndOf="@+id/profile_image_4"
+        android:layout_below="@+id/profile_name_4"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/set_active_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:layout_toEndOf="@+id/edit_Profile_4"
+        android:layout_below="@+id/profile_name_4"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>

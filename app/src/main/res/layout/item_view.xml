@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/ic_android_blue_24dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageview"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        tools:text="Name:" />
+
+    <TextView
+        android:id="@+id/wins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:layout_toEndOf="@+id/imageview"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Wins:10" />
+
+    <TextView
+        android:id="@+id/losses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wins"
+        android:layout_toEndOf="@+id/imageview"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Losses:10" />
+
+    <TextView
+        android:id="@+id/Draws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/losses"
+        android:layout_toEndOf="@+id/imageview"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Draws:" />
+
+    <!-- Additional TextViews -->
+
+    <TextView
+        android:id="@+id/totalGames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Draws"
+        android:layout_toEndOf="@+id/imageview"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="TotalGames:" />
+
+    <TextView
+        android:id="@+id/Percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalGames"
+        android:layout_toEndOf="@+id/imageview"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Percentage" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Percentage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:text="Menu"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="10dp"
+        android:background= "#800080" />
+</RelativeLayout>

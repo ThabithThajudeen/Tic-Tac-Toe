@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Tic Tac Toe"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn1v1"
+        style="@style/AppButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:text="1v1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnAI"
+        style="@style/AppButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="AI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1v1" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        style="@style/AppButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAI" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        style="@style/AppButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSettings" />
+
+    <Button
+        android:id="@+id/btnLeaderBoard"
+        style="@style/AppButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="LeaderBoard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
